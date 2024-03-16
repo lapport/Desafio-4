@@ -7,7 +7,7 @@ Este manual descreve o funcionamento básico da API de Personagens, que permite:
 Requisitos:
 
 -Python 3.x instalado
--Flask e Flask-RESTful-Swagger instalados (pip install Flask Flask-RESTful-Swagger)
+-Flask instalados (pip install Flask )
 -Conexão com a internet para acessar a API
 -Requets (pip install requests)
 
