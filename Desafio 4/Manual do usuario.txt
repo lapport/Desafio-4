@@ -1,0 +1,55 @@
+Este manual descreve o funcionamento básico da API de Personagens, que permite: 
+-Adicionar;
+-Visualizar;
+-Deletar;
+-Ver links associados a personagens;
+
+Requisitos:
+
+-Python 3.x instalado
+-Flask e Flask-RESTful-Swagger instalados (pip install Flask Flask-RESTful-Swagger)
+-Conexão com a internet para acessar a API
+-Requets (pip install requests)
+
+Passos para utilização:
+
+Iniciar a API:
+
+Antes de usar a aplicação, inicie a API Flask executando o script fornecido. Certifique-se de que o servidor esteja funcionando em um ambiente dedicado.
+Execute o script python nome_do_script.py no terminal para iniciar a API.
+Menu Principal:
+
+Ao iniciar o programa, você será apresentado com um menu principal contendo as seguintes opções:
+
+-Adicionar personagem
+-Ver personagens
+-Deletar personagem
+-Ver link do personagem
+-Sair
+
+Adicionar personagem:
+
+Escolha a opção "Adicionar personagem" no menu.
+Forneça as informações solicitadas para o novo personagem, incluindo nome, descrição, link, programa e animador.
+O personagem será adicionado à API.
+
+Ver personagens:
+
+Escolha a opção "Ver personagens" no menu.
+Uma lista de todos os personagens cadastrados na API será exibida.
+
+Deletar personagem:
+
+Escolha a opção "Deletar personagem" no menu.
+Uma lista de todos os personagens cadastrados na API será exibida.
+Selecione o índice do personagem que deseja deletar e confirme a exclusão.
+Ver link do personagem:
+
+Escolha a opção "Ver link do personagem" no menu.
+Uma lista de todos os personagens cadastrados na API será exibida.
+Selecione o índice do personagem do qual deseja ver o link associado.
+O link será aberto no seu navegador.
+
+Finalizar:
+
+Escolha a opção "Sair" para encerrar o programa.
