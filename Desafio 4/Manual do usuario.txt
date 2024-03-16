@@ -43,6 +43,7 @@ Deletar personagem:
 Escolha a opção "Deletar personagem" no menu.
 Uma lista de todos os personagens cadastrados na API será exibida.
 Selecione o índice do personagem que deseja deletar e confirme a exclusão.
+
 Ver link do personagem:
 
 Escolha a opção "Ver link do personagem" no menu.
