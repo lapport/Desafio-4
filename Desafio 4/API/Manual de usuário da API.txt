@@ -1,0 +1,61 @@
+Adicionar Personagem:
+
+Método: POST
+Rota: /characters/
+Descrição: Este endpoint permite adicionar um novo personagem à lista.
+Parâmetros:
+nome (string): Nome do personagem.
+descrição (string): Descrição do personagem.
+link (string): Link associado ao personagem.
+programa (string): Nome do programa de TV em que o personagem aparece.
+animador (string): Nome do animador responsável pelo personagem.
+Exemplo de uso: 
+POST /characters/
+{
+    "nome": "Pikachu",
+    "descrição": "Um Pokémon elétrico amarelo",
+    "link": "https://pokemon.com/pikachu",
+    "programa": "Pokémon",
+    "animador": "Satoshi Tajiri"
+}
+
+
+Listar Personagens:
+
+Método: GET
+Rota: /characters/
+Descrição: Este endpoint retorna uma lista de todos os personagens cadastrados.
+Exemplo de uso: GET /characters/
+
+Ver Detalhes do Personagem:
+
+Método: GET
+Rota: /characters/{index}/
+Descrição: Este endpoint retorna os detalhes de um personagem específico com base no índice fornecido.
+Parâmetros:
+index (integer): Índice do personagem na lista.
+Exemplo de uso: GET /characters/0/
+
+Deletar Personagem:
+
+Método: DELETE
+Rota: /characters/{index}/
+Descrição: Este endpoint permite deletar um personagem específico com base no índice fornecido.
+Parâmetros:
+index (integer): Índice do personagem na lista.
+Exemplo de uso: DELETE /characters/0/
+
+Instruções de Uso:
+1=Use um cliente HTTP como cURL, Postman ou um navegador da web para fazer solicitações para a API.
+2=Faça solicitações aos endpoints conforme descrito acima, fornecendo os parâmetros necessários quando aplicável.
+3=Analise as respostas da API para determinar se a solicitação foi bem-sucedida ou se houve algum erro.
+4=Certifique-se de entender os métodos suportados, os parâmetros necessários e as respostas esperadas para cada endpoint 
+antes de fazer solicitações
+
+Observação:
+
+Certifique-se de seguir as convenções de nomenclatura e os formatos de dados especificados ao fazer solicitações para a API.
+Este manual fornece uma visão geral do funcionamento básico da API. Para obter mais detalhes sobre os parâmetros suportados
+e as respostas retornadas, consulte a documentação oficial da API.
+Duvidas em como rodar a API e o código principal leia o manual de usuário e o README.
+Para mais informações ou suporte consulte a documentação, ou entre em contato com o desenvolvedor: kaunmarcos@outlook.com
