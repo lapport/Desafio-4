@@ -1,0 +1,87 @@
+openapi: 3.0.0
+info:
+  title: API de Personagens
+  description: API para gerenciar personagens de programas de TV.
+  version: 1.0.0
+servers:
+  - url: http://localhost:5000
+    description: Servidor de Desenvolvimento
+paths:
+  /characters/:
+    post:
+      summary: Adicionar um personagem
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nome:
+                  type: string
+                descrição:
+                  type: string
+                link:
+                  type: string
+                programa:
+                  type: string
+                animador:
+                  type: string
+      responses:
+        '201':
+          description: Personagem adicionado com sucesso.
+        '400':
+          description: Requisição inválida.
+    get:
+      summary: Listar todos os personagens
+      responses:
+        '200':
+          description: Lista de personagens retornada com sucesso.
+        '404':
+          description: Nenhum personagem encontrado.
+  /characters/{index}/:
+    get:
+      summary: Ver detalhes de um personagem
+      parameters:
+        - name: index
+          in: path
+          description: Índice do personagem na lista.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Detalhes do personagem retornados com sucesso.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Nome:
+                    type: string
+                  descrição:
+                    type: string
+                  link:
+                    type: string
+                  programa:
+                    type: string
+                  animador:
+                    type: string
+        '404':
+          description: Personagem não encontrado.
+    delete:
+      summary: Deletar um personagem
+      parameters:
+        - name: index
+          in: path
+          description: Índice do personagem na lista.
+          required: true
+          schema:
+            type: integer
+            format: int32
+      responses:
+        '200':
+          description: Personagem deletado com sucesso.
+        '404':
+          description: Personagem não encontrado.
